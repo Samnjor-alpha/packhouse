@@ -44,7 +44,7 @@ include '../controllers/session.php';
     <section class="section dashboard">
         <div class="row">
             <div class="col-3">
-<?php include '../navbars/coldroomnav.php'?>
+                <?php include '../navbars/coldroomnav.php'?>
             </div>
             <div class="col-9">
                 <div class="card">
@@ -55,7 +55,8 @@ include '../controllers/session.php';
                             <tr>
                                 <th>#</th>
                                 <th>Crop</th>
-                                <th>Available Quantity</th>
+                                <th>Quantity</th>
+                                <th>Date</th>
 
                             </tr>
                             </thead>
@@ -64,7 +65,8 @@ include '../controllers/session.php';
                             <tr>
                                 <td>1</td>
                                 <td>French Beans</td>
-                                <td>200kgs</td>
+                                <td>150kgs</td>
+                                <td>21/June/2022</td>
 
                             </tr>
                             </tbody>
