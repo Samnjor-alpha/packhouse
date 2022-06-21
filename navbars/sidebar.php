@@ -33,5 +33,11 @@
                 <span>Coldroom</span>
             </a>
         </li><!-- End Dashboard Nav -->
+        <li class="nav-item">
+            <a class="<?php active('qualitycheck.php');?> nav-link" href="../dashboard/qualitycheck.php">
+                <i class="bi bi-grid"></i>
+                <span>Quality check</span>
+            </a>
+        </li><!-- End Dashboard Nav -->
     </ul>
 
