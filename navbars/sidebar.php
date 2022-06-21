@@ -21,7 +21,17 @@
 
                       </ul>
         </li><!-- End Components Nav -->
-
-
+        <li class="nav-item">
+            <a class="<?php active('orders.php');?> nav-link" href="orders.php">
+                <i class="bi bi-grid"></i>
+                <span>Orders</span>
+            </a>
+        </li><!-- End Dashboard Nav -->
+        <li class="nav-item">
+            <a class="<?php active('coldroom.php');?> nav-link" href="../dashboard/coldroom.php">
+                <i class="bi bi-grid"></i>
+                <span>Coldroom</span>
+            </a>
+        </li><!-- End Dashboard Nav -->
     </ul>
 

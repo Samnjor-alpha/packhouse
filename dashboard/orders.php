@@ -45,35 +45,37 @@ include '../controllers/session.php';
         <div class="row">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Harvests</h5>
+                    <h5 class="card-title">Unprocessed Orders</h5>
                     <table class="table table-bordered" id="dataTable">
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>PRN No</th>
-                            <th>Receiving Date</th>
-                            <th>Crop Produce</th>
-                            <th>Supplier</th>
+                            <th>Order No</th>
+                            <th>Date</th>
+                            <th>Product</th>
+                            <th>Customer</th>
+                            <th>Order Type</th>
                             <th>Action</th>
                         </tr>
                         </thead>
 
                         <tbody>
-                     <tr>
-                         <td>1</td>
-                         <td>PRNO23432</td>
-                         <td><?php echo date("D ,d/M/Y")?></td>
-                         <td>French Beans</td>
-                         <td>Farmer 1</td>
-              <td>
-                             <div class="dropdown">
-                                 <button class="btn btn-outline-success dropdown-toggle" type="button" data-toggle="dropdown">Actions
-                                     <span class="caret"></span></button>
-                                 <ul class="dropdown-menu">
-                                     <li><a class="dropdown-item" href="receiving.php?prno=PRNO23432">View</a></li>
-                                 </ul>
-                             </div></td>
-                     </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>PRNO23432</td>
+                            <td><?php echo date("D ,d/M/Y")?></td>
+                            <td>French Beans</td>
+                            <td>Customer 1</td>
+                            <td>Local order</td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-outline-success dropdown-toggle" type="button" data-toggle="dropdown">Actions
+                                        <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="vieworder.php?orderno=ORDER23432">View</a></li>
+                                    </ul>
+                                </div></td>
+                        </tr>
                         </tbody>
                     </table>
                     <!-- End Table with stripped rows -->

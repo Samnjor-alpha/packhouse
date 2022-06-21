@@ -49,20 +49,21 @@ include '../controllers/session.php';
             <div class="col-9">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Planting</h5>
+                        <h5 class="card-title">Receiving</h5>
                         <div class="row mb-3">
                             <div class="col-md-12">
                                 <div class="d-flex flex-row rounded">
 
                                     <div class="pl-3 pt-2 pr-2 pb-2 w-50 border-left">
                                         <dl>
-                                            <dd><h5 class="font-weight-bolder text-dark">Plantation No:</h5></dd>
-                                            <dt><?php echo $_GET['plantingno'] ?></dt>
+                                            <dd><h5 class="font-weight-bolder text-dark">Receive no:</h5></dd>
+                                            <dt><?php echo "RCV439430" ?></dt>
 
-                                            <dd><h5 class="font-weight-bolder text-dark">Block No:</h5></dd>
-                                            <dt><?php echo "BLOCK439430" ?></dt>
-                                            <dd><h5 class="font-weight-bolder text-dark">Plantation Size:</h5></dd>
-                                            <dt><?php echo "80 acres" ?></dt>
+                                            <dd><h5 class="font-weight-bolder text-dark">PRN No:</h5></dd>
+
+                                            <dt><?php echo $_GET['prno'] ?></dt>
+                                            <dd><h5 class="font-weight-bolder text-dark">Quantity Received:</h5></dd>
+                                            <dt><?php echo "50 kgs" ?></dt>
                                             <?php if (isset($_GET['receive'])){ ?>
                                                 <dd><h5 class="font-weight-bolder text-dark">PRN No:</h5></dd>
                                                 <dt>PRN4343</dt>
@@ -75,14 +76,12 @@ include '../controllers/session.php';
                                             <dt><address>
                                                     <?php echo "Farmer 1" ?>
                                                 </address></dt>
-                                            <dd><h5 class="font-weight-bolder text-dark">Harvested Crop:</h5></dd>
+                                            <dd><h5 class="font-weight-bolder text-dark">Crop Produce:</h5></dd>
                                             <?php echo "Dhania" ?>
-                                            <dd><h5 class="font-weight-bolder text-dark">Harvesting  Date:</h5></dd>
+                                            <dd><h5 class="font-weight-bolder text-dark">Receiving Date:</h5></dd>
                                             <dt><?php echo date("D, d/M/Y") ?></dt>
                                         </dl>
-                                        <?php if (!isset($_GET['receive'])){ ?>
-                                            <p class="float-right text-right m-0"><a href="receiving.php?plantingno=<?php echo $_GET['plantingno']?>&&receive" class="btn btn-success"><i class="fas fa-play"></i> Start Receiving</a></p>
-                                        <?php } ?>
+
                                     </div>
                                 </div>
                             </div>
@@ -95,30 +94,24 @@ include '../controllers/session.php';
 
                     </div>
                 </div>
-                <?php if (isset($_GET['receive'])){?>
+
                 <div class="card">
 
                         <div class="card-body">
-                            <h5 class="card-title">Receive</h5>
+                            <h5 class="card-title">Actual Received Quantity</h5>
 
 
                             <form method="post" action=""  enctype="multipart/form-data" class="row g-3 mt-1">
-                                <div class="col-6">
+                                <div class=" offset-3 col-6">
 
                                     <label for="dateregistred">Quantity (Kgs)</label>
-                                    <input id="dateregistred" type="text" class="form-control mydatepicker">
+                                    <input id="dateregistred" value="50" type="text" class="form-control mydatepicker">
 
 
                                 </div>
-                                <div class="col-6">
 
-                                    <label for="dateregistred">Quality Check</label>
-                                    <input id="dateregistred" type="text" class="form-control mydatepicker">
-
-
-                                </div>
                                 <div class="offset-3 col-6">
-                                    <button type="submit" class="btn  btn-success" name="add_logbook">Receive</button>
+                                    <button type="submit" class="btn  btn-success" name="add_logbook">Store to ColdRoom</button>
                                 </div>
 
                             </form>
@@ -126,7 +119,7 @@ include '../controllers/session.php';
                         </div>
 
                 </div>
-                <?php }?>
+
             </div>
 
 
