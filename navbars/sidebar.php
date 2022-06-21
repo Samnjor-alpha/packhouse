@@ -38,6 +38,12 @@
                 <i class="bi bi-grid"></i>
                 <span>Quality check</span>
             </a>
+        </li>
+        <li class="nav-item">
+            <a class="<?php active('inventory.php');?> nav-link" href="../dashboard/inventory.php">
+                <i class="bi bi-grid"></i>
+                <span>Inventory check</span>
+            </a>
         </li><!-- End Dashboard Nav -->
     </ul>
 
