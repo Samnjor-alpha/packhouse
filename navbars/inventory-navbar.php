@@ -11,7 +11,7 @@
                     Add raw material </a></li>
             <li class="list-group-item <?php active('issuerm.php') ?>"><i class="fas fa-seedling"></i><a href="issuerm.php">
                    Issue RM </a></li>
-            <li class="list-group-item <?php active('requisitions.php') ?>"><i class="fas fa-seedling"></i><a href="rejects.php">
+            <li class="list-group-item <?php active('requisitions.php') ?>"><i class="fas fa-seedling"></i><a href="requisitions.php">
                    Requisitions</a></li>
         </ul><!-- End List group With Icons -->
 
