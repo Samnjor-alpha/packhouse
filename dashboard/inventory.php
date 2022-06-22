@@ -49,15 +49,14 @@ include '../controllers/session.php';
             <div class="col-9">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Raw materials</h5>
+                        <h5 class="card-title">Inventory</h5>
                         <table class="table table-bordered" id="dataTable">
                             <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Crop</th>
-                                <th>Quantity</th>
-                                <th>Date</th>
-                                <th>Action</th>
+                                <th>Item</th>
+                                <th>Available</th>
+
 
                             </tr>
                             </thead>
@@ -65,16 +64,10 @@ include '../controllers/session.php';
                             <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>French Beans</td>
+                                <td>Seeds</td>
                                 <td>150kgs</td>
-                                <td>21/June/2022</td>
-                                <td><div class="dropdown">
-                                        <button class="btn btn-outline-success dropdown-toggle" type="button" data-toggle="dropdown">Actions
-                                            <span class="caret"></span></button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="viewretrieve.php?prno=PRNO23432">View</a></li>
-                                        </ul>
-                                    </div></td>
+
+
                             </tr>
                             </tbody>
                         </table>
