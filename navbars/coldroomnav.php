@@ -4,14 +4,14 @@
 
         <!-- List group With Icons -->
         <ul class="list-group">
-            <li class="list-group-item <?php active('coldroom.php') ?>"><i class="fas fa-seedling"></i><a href="coldroom.php">
+            <li class="list-group-item <?php active('coldroom.php') ?>"><a href="coldroom.php">
                     Raw Materials</a></li>
-            <li class="list-group-item <?php active('received.php') ?>"><i class="fas fa-seedling"></i><a href="received.php">
+            <li class="list-group-item <?php active('received.php') ?>"><a href="received.php">
                     Received</a></li>
-            <li class="list-group-item <?php active('retrieved.php') ?>"><i class="fas fa-seedling"></i><a href="retrieved.php">
+            <li class="list-group-item <?php active('retrieved.php') ?>"><a href="retrieved.php">
                     Retrieved</a></li>
 
-            <li class="list-group-item <?php active('retrieve.php') ?>"><i class="fas fa-seedling"></i><a href="retrieve.php">
+            <li class="list-group-item <?php active('retrieve.php') ?>"><a href="retrieve.php">
                     Retrieve</a></li>
         </ul><!-- End List group With Icons -->
 

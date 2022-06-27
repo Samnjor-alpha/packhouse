@@ -98,7 +98,7 @@ include '../controllers/session.php';
                 <div class="card">
 
                         <div class="card-body">
-                            <h5 class="card-title">Actual Received Quantity</h5>
+                            <h5 class="card-title">Pack House Weight</h5>
 
 
                             <form method="post" action=""  enctype="multipart/form-data" class="row g-3 mt-1">

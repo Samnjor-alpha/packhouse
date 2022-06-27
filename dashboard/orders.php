@@ -62,7 +62,7 @@ include '../controllers/session.php';
                         <tbody>
                         <tr>
                             <td>1</td>
-                            <td>PRNO23432</td>
+                            <td>ORD23432</td>
                             <td><?php echo date("D ,d/M/Y")?></td>
                             <td>French Beans</td>
                             <td>Customer 1</td>

@@ -4,7 +4,7 @@
 
         <!-- List group With Icons -->
         <ul class="list-group">
-            <li class="list-group-item <?php active('receiving.php') ?>"><i class="fas fa-seedling"></i><a href="receiving.php?prno=<?php echo $_GET['prno'] ?>">
+            <li class="list-group-item <?php active('receiving.php') ?>"><a href="receiving.php?prno=<?php echo $_GET['prno'] ?>">
                     Receiving</a></li>
 
 
