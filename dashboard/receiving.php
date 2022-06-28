@@ -102,11 +102,28 @@ include '../controllers/session.php';
 
 
                             <form method="post" action=""  enctype="multipart/form-data" class="row g-3 mt-1">
-                                <div class=" offset-3 col-6">
+                                <div class="row">
+                                    <div class="col-4">
 
-                                    <label for="dateregistred">Quantity (Kgs)</label>
-                                    <input id="dateregistred" value="50" type="text" class="form-control mydatepicker">
+                                        <label for="dateregistred">Quantity (Kgs)</label>
+                                        <input id="dateregistred" value="50" type="text" class="form-control mydatepicker">
 
+
+                                    </div>
+                                    <div class="col-4">
+
+                                        <label for="dateregistred">Temperature (Celcius)</label>
+                                        <input id="dateregistred" value="" type="text" class="form-control mydatepicker">
+
+
+                                    </div>
+                                    <div class="col-4">
+
+                                        <label for="dateregistred">PH</label>
+                                        <input id="dateregistred" value="" type="text" class="form-control mydatepicker">
+
+
+                                    </div>
 
                                 </div>
 
